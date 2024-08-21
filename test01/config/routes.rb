@@ -12,8 +12,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  root to: 'pages#home'
-  get '/home', to: 'pages#salut'
-  get '/admin', to: 'cruds#crud'
-  
+  root to: 'pages#home' #home page ( localhoste 127.0.0.1:3000)
+  get '/home', to: 'pages#salut' #home page avec l'url home
+  get '/admin', to: 'cruds#crud' #page du CRUD
+  get '/gallerie', to: 'galleries#index'#, as: 'gallery' #affichage de la gallerie
+
 end

@@ -1,6 +1,6 @@
 class CreateGalleryTable < ActiveRecord::Migration[7.2]
   def change
-    create_table :gallery_tables do |t|
+    create_table :gallery do |t|
       t.string :titre
       t.string :artiste
       t.string :genre

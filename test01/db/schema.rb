@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_21_180016) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "gallery_tables", force: :cascade do |t|
+  create_table "gallery", force: :cascade do |t|
     t.string "titre"
     t.string "artiste"
     t.string "genre"
