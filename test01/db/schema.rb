@@ -10,8 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 0) do
+ActiveRecord::Schema[7.2].define(version: 2024_08_21_180016) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "gallery_tables", force: :cascade do |t|
+    t.string "titre"
+    t.string "artiste"
+    t.string "genre"
+    t.string "annee"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 end
