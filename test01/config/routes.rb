@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get '/home', to: 'pages#salut'
+  get '/admin', to: 'cruds#crud'
 end
